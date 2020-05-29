@@ -1,0 +1,80 @@
+.contenedor{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    position: relative;
+}
+.contenedor::after{
+    content: "";
+    position: absolute;
+    left: 280px;
+    top: 280px;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50px;
+    border: 3px solid chartreuse;
+}
+#img_reloj{
+    border: 8px solid gray;
+    width: 600px; 
+}
+#segundero{
+    width: 3px;
+    height: 250px;
+    background-color: red;
+    position: absolute;
+    top: 300px;
+    left: 300px;
+    animation: segundero 60s linear infinite;
+    animation-timing-function: steps(60, end);
+    transform-origin: top center;
+}
+@keyframes segundero{
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(540deg);
+    }
+}
+#minutos{
+    width: 10px;
+    height: 230px;
+    background-color: black;
+    border: solid 3px chartreuse;
+    position: absolute;
+    top: 300px;
+    left: 294px;
+    animation: minutos 3600s linear infinite;
+    animation-timing-function:  steps(60, end);
+    transform-origin: top center;
+}
+@keyframes minutos{
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(540deg);
+    }
+}
+#hora{
+    width: 10px;
+    height: 150px;
+    background-color: black;
+    border: solid 3px chartreuse;
+    position: absolute;
+    top: 300px;
+    left: 294px;
+    animation: hora 86400s linear infinite;
+    animation-timing-function:  steps(24, end);
+    transform-origin: top center;
+}
+@keyframes hora{
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(540deg);
+    }
+}
