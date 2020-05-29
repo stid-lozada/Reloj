@@ -47,7 +47,7 @@
     top: 300px;
     left: 294px;
     animation: minutos 3600s linear infinite;
-    animation-timing-function:  steps(60, end);
+    animation-timing-function:  steps(3600);
     transform-origin: top center;
 }
 @keyframes minutos{
